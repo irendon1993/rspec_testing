@@ -19,3 +19,9 @@ Exercise: `coffee_spec.rb`
 `context` is a method that groups a set of examples and their setup code together with a common description.
 
 `context` is an alias for `describe` and can be used interchangeably, but `context` is typically used for phases that modify the object we're testing.
+
+### Identifying Slow Examples
+
+RSpec's runner can help understand where the biggest bottlenecks are in your suite.
+
+We can ask RSpec to list the top time-wasters by passing the `--profile` option along with the number of offenders we'd like to see: `rspec --profile 2`
